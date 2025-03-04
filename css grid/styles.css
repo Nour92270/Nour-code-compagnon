@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+
+* {
+    margin: 5%;
+    padding: 5%;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ou center selon le besoin */
+    padding: 10px 20px; /* Ajuste selon l'espace nécessaire */
+}
+
+body {
+    background-color: white;
+    font-family: 'Courier Prime', monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 20px;
+    width: 80%;
+    max-width: 900px;
+    text-align: center;
+}
+
+.title {
+    grid-column: span 4;
+    background-color: #333;
+    color: white;
+    font-size: 2.5rem;
+    padding: 15px;
+    font-family: 'Compagnon';
+} 
+
+
+
+.circle {
+    grid-column: 2;
+    grid-row: span 2;
+    background-color: #333;
+    color: white;
+    font-size: 3rem;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.box {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    font-size: 1rem;
+}
+
+.left {
+    grid-column: 1;
+}
+
+.right {
+    grid-column: 3;
+}
+@font-face {
+    font-family: 'Compagnon';
+    src: url('compagnon-master/Compagnon-Regular.woff2') format('woff2'),
+         url('compagnon-master/Compagnon-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
